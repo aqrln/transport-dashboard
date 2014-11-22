@@ -1,0 +1,16 @@
+<template name="eventList">
+<div class="container">
+<h1>Current Events</h1>
+</div>
+{{#each events}}
+<div class="entry">
+	<ul class="container">
+		<li>point_id: {{ point_id }}</li>
+		<li>coords: {{ coords.lat }}, {{ coords.lon }}</li>
+		<li>type: {{ type }}</li>
+		<li>checkin: {{ checkin }}</li>
+		<li>checkout: {{ checkout }}</li>
+	</ul>
+</div>
+{{/each}}
+</template>
